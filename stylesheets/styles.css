@@ -60,7 +60,6 @@ body {
 }
 
 @media screen 
-and (min-width: 375px)
 and (max-width: 600px) {
     #advice-modal {
         display: flex;
@@ -70,6 +69,7 @@ and (max-width: 600px) {
         color: white;
         background-color: hsl(217, 19%, 24%);
         width: 100%;
+        max-width: 100%;
         border-radius: 20px;
     }
 }
