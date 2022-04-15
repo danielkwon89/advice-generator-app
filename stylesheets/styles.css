@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(218, 23%, 16%);
+    height: 100vh;
+}
+
+#advice-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: hsl(217, 19%, 24%);
+    width: 50%;
+    border-radius: 20px;
+}
+
+#advice-header, #advice-paragraph {
+    font-family: "Manrope";
+    text-align: center;
+}
+
+#advice-header {
+    color: hsl(150, 100%, 66%);
+    font-size: 12px;
+    letter-spacing: 3.75px;
+    text-transform: uppercase;
+    margin: 40px 50px 0px;
+}
+
+#advice-paragraph {
+    color: white;
+    font-size: 28px;
+    margin: 30px 50px;
+}
+
+#dice-button-container {
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding: 16px;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+
+    position: relative;
+    top: 27px;
+}
+
+#dice-button-container:hover, #dice-button-container:active {
+    filter: drop-shadow(
+        0px 0px 15px hsl(150, 100%, 66%)
+      );
+}
+
+#dice-button {
+    width: 100%;
+}
+
+@media screen 
+and (min-width: 375px)
+and (max-width: 600px) {
+    #advice-modal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        background-color: hsl(217, 19%, 24%);
+        width: 100%;
+        border-radius: 20px;
+    }
+}
